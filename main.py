@@ -38,7 +38,7 @@ def get_weather(region):
     # 天气
     weather = data['weather']
     # 当前温度
-    temp = data["temp"] + u"\N{DEGREE SIGN}" + "C"
+    temp = data["temp"]
     # 风向
     wind_dir = data["wind"]
     return weather, temp, wind_dir
