@@ -34,7 +34,7 @@ def get_access_token():
 def get_weather(region):
     region_url = "http://autodev.openspeech.cn/csp/api/v2.1/weather?openId=aiuicus&clientType=android&sign=android&city=" + region
     response = get(region_url).json()
-    data = = response['data']['list'][0]
+    data = response['data']['list'][0]
     # 天气
     weather = data['weather']
     # 当前温度
